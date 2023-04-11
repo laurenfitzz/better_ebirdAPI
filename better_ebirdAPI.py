@@ -38,10 +38,10 @@ def sci_to_com(scientific_name):
 #3 List_types
 #this function works to match names and get a list of possible sub species such as a list of all names containing duck or wren, 
 #this function isnt perfect as it can miss related speices that do not contain matching names, however its a good indicator
-def list_types(sub_species):
+def list_types(keyword):
     import pandas as pd
     species_data = pd.read_csv("PFW-species-translation-table.csv")
-    matching_names = species_data[species_data['american_english_name'].str.contains(sub_species, case=False)]['american_english_name'].tolist()
+    matching_names = species_data[species_data['american_english_name'].str.contains(keyword, case=False)]['american_english_name'].tolist()
     return matching_names
 
 #4 common name discription
