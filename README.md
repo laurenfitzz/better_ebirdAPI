@@ -1,9 +1,10 @@
 # better_ebirdAPI 
 
 This python package was created for a Concordia Univeristy Geog464: Programming for Geospatial technologies class. The package is made for birders using the ebirdAPI. 
-A tutorial on the package can be found in the .ipynd file "using_btter_ebirdAPI_tutorial". The .ipynd file "btter_ebirdAPI_tutorial" is a walk through on the creations of the packages functions. 
 
-Some of the functions require a google API key but they are not necessary if the user doesn't have one. 
+A tutorial using the module can be found in the .ipynd file "Using_better_ebirdAPI_Module". For those who want to understand how the module was created see the .ipynd file "btter_ebirdAPI_tutorial".
+
+Some of the functions require a google API key but they are not necessary if the user doesn't have one. The maping functions ending with "GAPI" have been found to more consitantly return/load pictures with the maps. The reasonings for why some images do not appear in the maps is unclear, we can assume that its due to the amount of data the function is going through. 
 
 **This package contains the following functions**
 1. ***com_to_sci*** - This function allows the user to input the *common name of any bird and retrives the scientific name for said bird.* This is done using the file "PFW-species-translation-table.csv" which was retrieved from the [ebird data access](https://ebird.org/data/download)
