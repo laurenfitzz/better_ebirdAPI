@@ -2,7 +2,7 @@
 
 This python package was created for a Concordia Univeristy Geog464: Programming for Geospatial technologies class. The package is made for birders using the ebirdAPI. 
 
-A tutorial using the module can be found in the .ipynd file "Using_better_ebirdAPI_Module". For those who want to understand how the module was created see the .ipynd file "btter_ebirdAPI_tutorial".
+A tutorial using the module can be found in the .ipynd file "Using_better_ebirdAPI_Module". For those who want to understand how the module was created see the .ipynd file "better_ebirdAPI_tutorial".
 
 Some of the functions require a google API key but they are not necessary if the user doesn't have one. The maping functions ending with "GAPI" have been found to more consitantly return/load pictures with the maps. The reasonings for why some images do not appear in the maps is unclear, we can assume that its due to the amount of data the function is going through. 
 
