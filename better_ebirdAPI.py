@@ -232,9 +232,8 @@ def wiki_pic_map(common_name):
     import bs4
     from bs4 import BeautifulSoup
     # Make a GET request to the Wikipedia page
-    sci_name = com_to_sci(common_name)
+    sci_name = com_to_sci(common_name).replace(" ", "_")
     url = f"https://en.wikipedia.org/wiki/{sci_name}"
-    common_name = common_name.replace(" ", "_")
     response = requests.get(url)
     # Parse the HTML content using BeautifulSoup
     soup = BeautifulSoup(response.text, "html.parser")
